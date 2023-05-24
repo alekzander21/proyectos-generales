@@ -1,16 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: #ECEEEC;
+}
 .container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario{
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
 }
 
-.container input{
-    width: 200px;
-    height: 20px;
-    margin: 10px;
-}
-
-.container button{
-    width: 150px;
+.formulario input{
+    width: 20rem;
     padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
 }
+
+.formulario button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Estilos para las tablas*/
+
+.container-datos .tablas{
+    border: 1px solid #555;
+    margin-top: 20px;
+    padding: 10px;
+}
+.container-datos .tablas .celdas .celdas-datos{
+    display: inline;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 20px;
+}
+
+.container-datos button{
+    padding: 10px;
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/*Estilos para el modal*/
+.modal-body .form-group{
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-body .form-group input{
+    margin-bottom: 20px;
+}
+
